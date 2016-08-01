@@ -463,6 +463,21 @@ class BaseCork(object):
             'desc': data['desc'],
             'creation_date': data['creation_date'],
             'last_login': str(datetime.utcnow())
+            # BEGIN modified code
+            'music_acct': data['music_acct'],
+            'music_acct_usr': data['music_acct_usr'],
+            'music_acct_pwd': data['music_acct_pwd'],
+            'scents': data['scents'],
+            'income_entries': data['income_entries'],
+            'expense_entries': data['expense_entries'],
+            'goal_entries': data['goal_entries'],
+            'action_entries': data['action_entries'],
+            'research_panel_items': data['research_panel_items'],
+            'music_collections': data['music_collections'],
+            'lighting_presets': data['lighting_presets'],
+            'courses': data['courses'],
+            'personas': data['personas']
+            # END modified code
         }
         self._store.save_users()
 
