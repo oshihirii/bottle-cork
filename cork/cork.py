@@ -462,7 +462,7 @@ class BaseCork(object):
             'email_addr': data['email_addr'],
             'desc': data['desc'],
             'creation_date': data['creation_date'],
-            'last_login': str(datetime.utcnow())
+            'last_login': str(datetime.utcnow()),
             # BEGIN modified code
             'music_acct': data['music_acct'],
             'music_acct_usr': data['music_acct_usr'],
