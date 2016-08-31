@@ -464,6 +464,7 @@ class BaseCork(object):
             'creation_date': data['creation_date'],
             'last_login': str(datetime.utcnow()),
             # BEGIN modified code
+            'statement_comprehension': data['statement_comprehension'],
             'music_acct': data['music_acct'],
             'music_acct_usr': data['music_acct_usr'],
             'music_acct_pwd': data['music_acct_pwd'],
